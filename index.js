@@ -16,7 +16,6 @@ io.on("connection", (socket) => {
   let i = 0;
   let prices;
   socket.on("subscribe", ({ channel }) => {
-    socket.join(channel);
     console.log(channel);
 
     prices = setInterval(() => {
